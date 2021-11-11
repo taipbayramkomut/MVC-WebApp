@@ -1,0 +1,59 @@
+body{
+	background-color:#FF9999;
+}
+
+h1{
+	font-style: italic;
+	color: gray;
+	text-align: center;
+}
+
+hr{
+	/* Length and width of the horizontal line.*/
+	width: 50%;
+	height: 1px;
+	
+	/* The border settings of the horizontal line. */
+	background-color:#E0E0E0;
+	border: solid #E0E0E0;
+	border-radius: 1px;
+}
+
+input[type=button]{
+	
+  /* Button borders. */
+  border: solid #E0E0E0;
+  border-radius: 5px;
+  
+  /* Button size and positioning information. */
+  width: 300px;
+  height: 100px;
+  margin: 20px; 
+  
+  background-color: white;
+  
+  /* The properties of the text on the button. */
+  color: #E0E0E0;
+  font-size: 18px;
+
+  /* Button is clickable.	*/
+  cursor: pointer;
+}
+
+.outer{
+	/* Border settings */
+	border: solid #E0E0E0 5px;
+	margin: 5px;
+	
+	/* Content settings. */
+	background-color:white;	
+	
+	/* Expand over the entire section. */
+	position: absolute; 
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.page_section{
+	/* Center all elements in div element. */
+	margin: 7.5% auto auto auto;
+}
