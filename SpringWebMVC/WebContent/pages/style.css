@@ -10,7 +10,7 @@ h1{
 
 hr{
 	/* Length and width of the horizontal line.*/
-	width: 50%;
+	width: 40%;
 	height: 1px;
 	
 	/* The border settings of the horizontal line. */
@@ -40,6 +40,27 @@ input[type=button]{
   cursor: pointer;
 }
 
+label {
+	/* Positions the label above the input element. */
+    display: block;
+    /* Left aligns the text on the label. */
+    text-align: left;
+	/* Font style settings. */
+	color: gray;
+  	font-style: italic;
+  	font-weight: bold;
+  	font-family: Calibri, sans-serif;
+  	/* The padding  between it and the next element */
+    padding-bottom: 2%;
+}
+
+input{
+	width: 400px;
+	height: 25px;
+}
+
+/*--------- Class attribute definitions ----------*/
+
 .outer{
 	/* Border settings */
 	border: solid #E0E0E0 5px;
@@ -56,4 +77,22 @@ input[type=button]{
 .page_section{
 	/* Center all elements in div element. */
 	margin: 7.5% auto auto auto;
+}
+
+.form_section{
+	margin: 4% auto auto auto;
+}
+
+.buttons_section{
+	/* Centers all elements in a div element horizontally.	*/
+	display: table;
+ 	margin: 0 auto;
+}
+
+.input_section{
+	/* Centers all elements in a div element horizontally.	*/
+ 	display: table;
+ 	margin: 0 auto;
+ 	/* The padding  between it and the next element */
+ 	padding: .5%;
 }
