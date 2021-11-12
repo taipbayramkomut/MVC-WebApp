@@ -20,7 +20,7 @@
 <body>
 	<div class = "outer">
 		<div class="page_section">
-			<h1> Kayıt Formu </h1>
+			<h1> Giriş Yap </h1>
 		<hr>
 		</div>
 		
@@ -34,16 +34,10 @@
 					<label for="user_password"> Şifre</label>
 					<input id="user_password" type="password">
 				</div>
-				<div class="input_section">
-					<label for="password_confirm">  Şifre Tekrarı</label>
-					<input id="password_confirm" type="password">
-				</div>
-				<div class="input_section">
-					<label for="user_email"> E-Posta</label>
-					<input id="user_email">
-				</div>
 			</form>
 		</div>
+		
+		<button class="link">Şifrenizi unuttunuz mu?</button>
 		
 		<div class= "buttons_section">
 			<input type="button" value="Geri" >

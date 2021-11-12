@@ -36,21 +36,43 @@ input[type=button]{
   color: #E0E0E0;
   font-size: 18px;
 
-  /* Button is clickable.	*/
+  /* Button is hand clickable.	*/
   cursor: pointer;
 }
 
+button.link {
+	background:none; 
+	border:none;
+  	/* Button is hand clickable.	*/
+  	cursor: pointer;
+	
+	/* The properties of the text on the button. */
+	color: gray;
+	font-size: 15px;
+	font-style: italic;
+ 	font-weight: bold;
+	font-family: Calibri, sans-serif;
+	text-align: center;
+	
+	/*	Bir elementi yatay olarak ortalama, div kullanmadan	*/
+	display: grid;  
+	margin: auto;
+	
+	/* Önceki ve sonraki elementler ile arasına dolgu ekliyoruz */
+	padding: 2.5%;
+}
+
 label {
-	/* Positions the label above the input element. */
+	/* Labeli input elementin üstünde konumlandırır. */
     display: block;
-    /* Left aligns the text on the label. */
+    /* Labeldeki yazıyı sola yaslar. */
     text-align: left;
-	/* Font style settings. */
+	/* Yazı stili ayarlarıdır. */
 	color: gray;
   	font-style: italic;
   	font-weight: bold;
   	font-family: Calibri, sans-serif;
-  	/* The padding  between it and the next element */
+  	/* Sonraki element ile arasındaki boşluk farkıdır. */
     padding-bottom: 2%;
 }
 
@@ -84,15 +106,15 @@ input{
 }
 
 .buttons_section{
-	/* Centers all elements in a div element horizontally.	*/
+	/* Bir div element içerisindeki tüm elementleri yatay olarak merkezde toplar.	*/
 	display: table;
  	margin: 0 auto;
 }
 
 .input_section{
-	/* Centers all elements in a div element horizontally.	*/
+	/* Bir div element içerisindeki tüm elementleri yatay olarak merkezde toplar.	*/
  	display: table;
  	margin: 0 auto;
- 	/* The padding  between it and the next element */
+ 	/* Diğer elementler arasındaki aralık mesafesini ayarlar.*/
  	padding: .5%;
 }
