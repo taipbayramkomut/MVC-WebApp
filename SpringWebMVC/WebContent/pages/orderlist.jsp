@@ -29,6 +29,7 @@
 		<div class="order_list">
 			<fieldset>
 				<legend>Sipariş Listesi</legend>
+				<!-- Case 1 -->
 				<div class="entry_section">
 					<div class="order_entry_section">
 						<div class = "order_name">
@@ -42,9 +43,13 @@
 						</div>
 					</div>
 				</div>
+				<!-- Case 2 -->
+				<div class="not_found_order">
+					<span class="center_text"> Henüz Siparişiniz Bulunmamaktadır.</span>
+				</div>
 			</fieldset>
 		</div>
-		
+	
 		<div class= "buttons_section">
 			<input type="button" value="Çıkış" >
 			<input type="button" value="Yeni Sipariş Ekle" >

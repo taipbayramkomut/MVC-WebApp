@@ -86,6 +86,14 @@ fieldset{
 	
 	width: 100%;
 	height: 90%;
+	
+	/* We add a scroll bar to the fieldset. */
+
+	/* If we wanted the scroll bar to stay constantly, we should use this.
+	    overflow:scroll;
+	*/
+ 	overflow: auto;
+    overflow-x:hidden;
 }
 
 legend{
@@ -200,4 +208,47 @@ legend{
   	text-align: center;
   	
   	cursor: pointer;
+}
+
+.not_found_order{
+	height:100%;
+	/*	First, we horizontally center the span (content) inside the div  with adding right-left margin.	*/
+	display:table;
+    margin-left: auto;
+    margin-right: auto;
+
+	color: gray;
+  	font-style: italic;
+  	font-weight: bold;
+  	font-family: Calibri, sans-serif;
+}
+
+.center_text{
+	/* Then we vertically center the span which is content of the div. */
+	display:table-cell;
+	vertical-align: middle;
+}
+
+/*--------- Custom scroll bar settings ----------*/
+
+/* Settings the scroll bar width. */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Settings the entire of the scroll bar section. */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Scroll bar itself */
+::-webkit-scrollbar-thumb {
+  background: #FF9999; 
+  border-radius: 5px;
+}
+
+/* Color change when holding the scroll bar. */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
 }
