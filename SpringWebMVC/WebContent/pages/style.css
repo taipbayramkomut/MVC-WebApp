@@ -54,31 +54,48 @@ button.link {
 	font-family: Calibri, sans-serif;
 	text-align: center;
 	
-	/*	Bir elementi yatay olarak ortalama, div kullanmadan	*/
+	/*	Center an element horizontally without using a div	*/
 	display: grid;  
 	margin: auto;
 	
-	/* Önceki ve sonraki elementler ile arasına dolgu ekliyoruz */
+	/* We add padding between the previous, next elements */
 	padding: 2.5%;
 }
 
 label {
-	/* Labeli input elementin üstünde konumlandırır. */
+	/* Position the label above the input element */
     display: block;
-    /* Labeldeki yazıyı sola yaslar. */
+    /* Aligns the text on the label to the left. */
     text-align: left;
-	/* Yazı stili ayarlarıdır. */
+	/* Font style settings. */
 	color: gray;
   	font-style: italic;
   	font-weight: bold;
   	font-family: Calibri, sans-serif;
-  	/* Sonraki element ile arasındaki boşluk farkıdır. */
+  	/* Spacing with the next element. */
     padding-bottom: 2%;
 }
 
 input{
 	width: 400px;
 	height: 25px;
+}
+
+fieldset{
+	border: solid #E0E0E0;
+	
+	width: 100%;
+	height: 90%;
+}
+
+legend{
+	border: solid #E0E0E0;
+	
+	/* Font style settings. */
+	color: gray;
+  	font-style: italic;
+  	font-weight: bold;
+  	font-family: Calibri, sans-serif;
 }
 
 /*--------- Class attribute definitions ----------*/
@@ -106,15 +123,81 @@ input{
 }
 
 .buttons_section{
-	/* Bir div element içerisindeki tüm elementleri yatay olarak merkezde toplar.	*/
+	/* Centers all elements in a div element horizontally.	*/
 	display: table;
  	margin: 0 auto;
 }
 
 .input_section{
-	/* Bir div element içerisindeki tüm elementleri yatay olarak merkezde toplar.	*/
+	/*  Centers all elements in a div element horizontally.	*/
  	display: table;
  	margin: 0 auto;
- 	/* Diğer elementler arasındaki aralık mesafesini ayarlar.*/
+ 	/* Sets the padding between other elements.*/
  	padding: .5%;
+}
+
+.order_list{
+	width: 50%;
+	height: 54%;
+
+ 	display: table;
+ 	margin: 1% auto 0 auto;
+}
+
+/* entry_section (a order entry): table */
+/* order_entry_section: table-row */
+/* order_name and user_choices:  table-cell */
+
+.entry_section{	
+	display:table;
+	/* If we choose display: table, these followings are required instead of margin between row and cell. */
+	border-spacing: 5px;
+    border-collapse: separate;	
+	padding: 5px;
+	
+	width: 96%;
+	height: 9%;
+	
+	border: solid #E0E0E0 1px;	
+}
+
+.order_entry_section{
+	display:table-row;
+	/* padding: 5px; */
+
+	width: 96%;
+	height: 9%;
+	
+	border: solid #E0E0E0 1px;
+}
+
+.order_name{	
+	display: table-cell;
+	
+	/* We don't need to enter a width value for the div, it already covers all the remaining space from the other cell.*/
+	
+	color: gray;
+  	font-style: italic;
+  	font-weight: bold;
+  	font-family: Calibri, sans-serif;
+  	text-align: left;
+}
+
+.user_choices{
+	/* horizontal order. */
+	display: table-cell;
+	
+	/* dimensions by parent block */
+	width: 8%;
+	
+	border: solid #E0E0E0 1px;
+	
+	/* Font style settings. */
+	color: gray;
+  	font-style: italic;
+  	font-weight: bold;
+  	font-family: Calibri, sans-serif;
+  	text-align: center;
+  	
+  	cursor: pointer;
 }
